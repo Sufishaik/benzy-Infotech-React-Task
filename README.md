@@ -1,3 +1,14 @@
+ScreenShorts
+![Screenshot 2024-12-21 152801](https://github.com/user-attachments/assets/8f58033f-8491-4e19-94d2-b2f9bb113b02)
+![Screenshot 2024-12-21 152815](https://github.com/user-attachments/assets/145042b5-6df7-4f0b-bd68-45e65be43b28)
+![Screenshot 2024-12-21 152915](https://github.com/user-attachments/assets/f7376830-7b45-4bea-a251-eec0597507fb)
+![Screenshot 2024-12-21 152935](https://github.com/user-attachments/assets/0ba57bfb-8d16-4360-bfa5-c3cb8dfdfc8c)
+![Screenshot 2024-12-21 153000](https://github.com/user-attachments/assets/ed8c2b70-4715-4d78-ac35-1e3fb30b9c6a)
+
+Check Report Will Redirect to Frappe page 
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
