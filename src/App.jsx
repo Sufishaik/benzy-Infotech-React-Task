@@ -57,7 +57,7 @@ const App = () => {
     fetchReports();
   }, []);
   const formattedFromDate = fromDate ? format(fromDate, 'yyyy-MM-dd') : null;
-  const formattedToDate = fromDate ? format(toDate, 'yyyy-MM-dd') : null;
+  const formattedToDate = toDate ? format(toDate, 'yyyy-MM-dd') : null;
 
 
   const handleFilter = () => {
@@ -84,7 +84,14 @@ const App = () => {
     }, 0);
     setTotalFine(fine);
   };
-
+  const handleCheckReport = () => {
+    if (!formattedFromDate || !formattedToDate) {
+      alert("Please select both from date and to date to check the report.");
+    } else {
+      const reportUrl = `http://127.0.0.1:8010/app/query-report/Employee%20Food%20Order%20Details?from_date=${formattedFromDate}&to_date=${formattedToDate}`;
+      window.open(reportUrl, "_blank");
+    }
+  };
 
 
   return (
@@ -127,15 +134,14 @@ const App = () => {
           >
             Submit
           </Button>
+
           <Button
             variant="contained"
             color="primary"
-
+            onClick={handleCheckReport}
             sx={{ height: "56px" }}
           >
-            <a target="_blank" href={`http://127.0.0.1:8010/app/query-report/Employee%20Food%20Order%20Details?from_date=${formattedFromDate}&to_date=${formattedToDate}`}>
-              Check Report
-            </a>
+            Check Report
 
           </Button>
         </Box>
